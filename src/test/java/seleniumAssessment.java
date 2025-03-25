@@ -27,6 +27,7 @@ public class seleniumAssessment {
 		} catch (Exception e) {
 			System.out.println("Unable to launch requested URL.");
 			e.printStackTrace();
+			Thread.sleep(2000);
 		}
 		WebElement revenueCalculatorTab = driver.findElement(By.xpath("//div[contains(text(), 'Revenue Calculator')]"));
 		revenueCalculatorTab.click();
