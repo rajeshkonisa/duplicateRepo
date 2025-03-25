@@ -31,6 +31,7 @@ public class seleniumAssessment {
 		}
 		WebElement revenueCalculatorTab = driver.findElement(By.xpath("//div[contains(text(), 'Revenue Calculator')]"));
 		revenueCalculatorTab.click();
+		Thread.sleep(2000);
 
 	// Scroll to the slider section
 		WebElement sliderSection = driver.findElement(By.xpath("//input[@type='range']"));
